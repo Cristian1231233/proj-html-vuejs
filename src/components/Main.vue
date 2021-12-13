@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main">
       main
   </div>
 </template>
@@ -11,5 +11,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.main{
+    min-height: 400px;
+}
 
 </style>
