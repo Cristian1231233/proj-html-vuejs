@@ -26,6 +26,7 @@ ul{
     li{
         font-size: 13px;
         margin-right: 20px;
+        cursor: pointer;
     }
     li.bottone{
         background-color: orange;

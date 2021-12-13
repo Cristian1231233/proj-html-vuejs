@@ -32,10 +32,13 @@ export default {
 <style lang="scss" scoped>
 
 header{
-    height: 450px;
-    background-color: gray;
+    height: 500px;
+    background-image: url('../assets/images/home-page-slider.jpg');
+    background-size: 1500px;
+    background-position: center;
+
     .header-top{
-        height: 80px;
+        height: 70px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -45,14 +48,14 @@ header{
         width: 200px;
            img{
             width: 100%;
+            cursor: pointer;
         }
        }
     }
     
 }
 .container-header-bottom{
-    height: calc(100% - 80px);
-    background-color: green;
+    height: calc(100% - 70px);
     display: flex;
     justify-content: center;
     align-items: center;
