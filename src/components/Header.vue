@@ -4,7 +4,7 @@
         <div class="logo">
             <img src="../assets/images/avada-charity-logo.png" alt="">
         </div>
-        <Menu />
+        <Menu :ListMenu="ListMenu" />
     </div>
     <div class="container-header-bottom">
       <div class="header-bottom">
@@ -23,6 +23,16 @@ import Menu from './Menu'
 
 export default {
    nome: 'Header',
+   data(){
+        return{
+            ListMenu:[
+                'HOME',
+                'MISSION',
+                'CAUSES',
+                'JOURNAL'
+            ]
+        }
+    },
    components:{
        Menu
    }

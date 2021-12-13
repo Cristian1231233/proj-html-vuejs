@@ -1,10 +1,10 @@
 <template>
   <div class="menu">
             <ul>
-                <li>HOME</li>
-                <li>MISSION</li>
-                <li>CAUSES</li>
-                <li>JOURNAL</li>
+                <li v-for="(item, index) in ListMenu"
+                :key="index" >
+                {{item}}
+                </li>
                 <li class="bottone">DONATE</li>
             </ul>
         </div>
@@ -12,7 +12,10 @@
 
 <script>
 export default {
-    nome: 'Menu'
+    nome: 'Menu',
+    props:{
+       ListMenu: Array
+   },
 }
 </script>
 
@@ -24,6 +27,7 @@ ul{
     justify-content: space-around;
     align-items: center;
     li{
+        color: white;
         font-size: 13px;
         margin-right: 20px;
         cursor: pointer;
