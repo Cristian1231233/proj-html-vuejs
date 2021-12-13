@@ -26,45 +26,26 @@
               </div>
           </div>
       </div>
-      <div class="section-2">
-          <div>OUR VALUE</div>
-          <div class="line"></div>
-          <div>Think Big.Act Bigger.</div>
-          <div class="container-ciclo-2">
-              <div class="element">
-                  <div class="symbol"></div>
-                  <div class="title">Clean Water</div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis porro, vitae explicabo odio voluptatum iste? Error vero alias tenetur iure sunt non libero omnis blanditiis. Non quam in repudiandae quia?</p>
-                  <button>Learn More</button>
-              </div>
-              <div class="element">
-                  <div class="symbol"></div>
-                  <div class="title">Clean Water</div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis porro, vitae explicabo odio voluptatum iste? Error vero alias tenetur iure sunt non libero omnis blanditiis. Non quam in repudiandae quia?</p>
-                  <button>Learn More</button>
-              </div>
-              <div class="element">
-                  <div class="symbol"></div>
-                  <div class="title">Clean Water</div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis porro, vitae explicabo odio voluptatum iste? Error vero alias tenetur iure sunt non libero omnis blanditiis. Non quam in repudiandae quia?</p>
-                  <button>Learn More</button>
-              </div>
-              <div class="element">
-                  <div class="symbol"></div>
-                  <div class="title">Clean Water</div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis porro, vitae explicabo odio voluptatum iste? Error vero alias tenetur iure sunt non libero omnis blanditiis. Non quam in repudiandae quia?</p>
-                  <button>Learn More</button>
-              </div>
-          </div>
-      </div>
-      <div class="section-3">VIEW ALL OUR CAUSES</div>
+      <Section2 />
+      <Section3 />
+      <div class="section-4">VIEW ALL OUR CAUSES</div>
+      <Section5 />
   </div>
 </template>
 
 <script>
+
+import Section2 from './Section2.vue'
+import Section3 from './Section3.vue'
+import Section5 from './Section5.vue'
+
 export default {
    nome: 'Main',
-   
+   components:{
+       Section2,
+       Section3,
+       Section5
+   }
 }
 </script>
 
@@ -107,26 +88,8 @@ export default {
         }
         
     }
-    .section-2{
-            height: 300px;
-            text-align: center;
-            margin: 60px;
-
-            // .line{
-            //     // height: 3px;
-            //     // width: 60px;
-            //     // background-color: yellow;
-                
-            // }
-            .container-ciclo-2{
-                display: flex;
-                margin-top: 120px;
-                .element{
-                    margin-right: 13px;
-                }
-            }
-    }
-    .section-3{
+    
+    .section-4{
         height: 70px;
         color: white;
         font-size: 11px;
