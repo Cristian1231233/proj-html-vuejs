@@ -43,7 +43,7 @@ export default {
 .section-2{
             height: 300px;
             text-align: center;
-            margin: 60px;
+            padding: 60px;
 
             // .line{
             //     // height: 3px;

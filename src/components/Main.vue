@@ -30,6 +30,7 @@
       <Section3 />
       <div class="section-4">VIEW ALL OUR CAUSES</div>
       <Section5 />
+      <Section6 />
   </div>
 </template>
 
@@ -38,13 +39,15 @@
 import Section2 from './Section2.vue'
 import Section3 from './Section3.vue'
 import Section5 from './Section5.vue'
+import Section6 from './Section6.vue'
 
 export default {
    nome: 'Main',
    components:{
        Section2,
        Section3,
-       Section5
+       Section5,
+       Section6
    }
 }
 </script>
