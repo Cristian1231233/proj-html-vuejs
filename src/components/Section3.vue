@@ -40,13 +40,12 @@ export default {
     text-align: center;
     padding: 30px;
     .container-ciclo-3{
-        margin: 60px auto;
+        width: 900px;
+        margin: 50px auto;
         display: flex;
-       
+        justify-content: space-around;
         .photo{
             width: 200px;
-            margin-right: 20px;
-            margin-left: 70px;
             img{
                 width: 100%;
             }

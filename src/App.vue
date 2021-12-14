@@ -2,7 +2,7 @@
   <div>
     <Header />
     <Main />
-    <Footer />
+    <Footer :iconList="iconList" />
   </div>
 </template>
 
@@ -14,6 +14,16 @@
 
 export default {
   name: 'App',
+  data(){
+    return{
+      iconList: [
+          'fab fa-facebook-f',
+          'fab fa-instagram',
+          'fab fa-twitter',
+          'fab fa-youtube'
+      ]
+    }
+  },
   components: {
      Header,
      Main,

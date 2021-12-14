@@ -8,10 +8,12 @@
       <div class="footer-bottom">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem doloremque</p>
             <div class="icon-social">
-                <div class="icon">
-                    <i class="fab fa-facebook-f"></i>
+                <div class="icon" v-for="(icon, index) in iconList"
+                :key="index"
+                >
+                    <i :class="icon"></i>
                 </div>
-                <div class="icon">
+                <!-- <div class="icon">
                     <i class="fab fa-instagram"></i>
                 </div>
                 <div class="icon">
@@ -19,7 +21,7 @@
                 </div>
                 <div class="icon">
                     <i class="fab fa-youtube"></i>
-                </div>
+                </div> -->
             </div>
       </div>
   </footer>
@@ -27,7 +29,10 @@
 
 <script>
 export default {
-   nome: 'Footer'
+   nome: 'Footer',
+    props:{
+        iconList: Array
+    }
 }
 </script>
 
@@ -37,11 +42,9 @@ export default {
     display: flex;
     align-items: center;
     height: 90px;
-    border: 1px solid black;
     .logo{
         width: 240px;
         height: 50px;
-        border: 1px solid black;
         margin: auto;
         img{
             width: 100%;
@@ -73,6 +76,7 @@ export default {
             text-align: center;
             line-height: 25px;
             cursor: pointer;
+            
         }
     }
 }

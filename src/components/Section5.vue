@@ -39,7 +39,7 @@
                  <img src="../assets/images/photo-1444664597500-035db93e2323-177x142.jpg" alt="">
              </div>
              <div class="texts">
-                 <div class="yellow">Understanding community complexities</div>
+                 <div class="orange">Understanding community complexities</div>
                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
              </div>
          </div>
@@ -48,7 +48,7 @@
                  <img src="../assets/images/photo-1444664597500-035db93e2323-177x142.jpg" alt="">
              </div>
              <div class="texts">
-                 <div class="yellow">Understanding community complexities</div>
+                 <div class="orange">Understanding community complexities</div>
                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
              </div>
          </div>
@@ -71,7 +71,7 @@ export default {
 @import '../assets/vars.scss';
 
 .section-5{
-    min-height: 500px;
+    min-height: 400px;
     .contenitore-top{
         text-align: center;
         margin: 60px 0;
@@ -90,14 +90,12 @@ export default {
         width: 700px;
         min-height: 300px;
         margin: 0 auto;
-        border: 1px solid black;
         p{
             color: $color-gray;
         }
         .image-text{
             width: 45%;
             min-height: 300px;
-            border: 1px solid black;
             .image{
                 width: 100%;
                 img{
@@ -105,8 +103,8 @@ export default {
                 }
             }
             .text{
-                padding: 14px;
-                .yellow{
+                padding: 15px;
+                .orange{
                     color: $color-orange;
                     margin: 10px 0;
                 }
@@ -115,12 +113,10 @@ export default {
         .container-images{
             height: 100%;
             width: 45%;
-            border: 1px solid black;
         }
         .images-texts{
             display: flex;
             width: 100%;
-            border: 1px solid black;
             margin-bottom: 30px;
             .images{
                 width: 76px;
@@ -132,10 +128,13 @@ export default {
             .texts{
                 font-size: 12px;
                 margin: 7px 10px;
-                .yellow{
+                .orange{
                     color: $color-orange;
                 }
             }
+        }
+        .images-texts:last-child{
+            margin-bottom: none;
         }
     }
     .altro-text{

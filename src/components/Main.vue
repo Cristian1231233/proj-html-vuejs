@@ -12,16 +12,16 @@
           <div class="section-1-right">
               <div class="container-1">
                   <div class="num-text">
-                    <div>2032</div>
-                    <div>Volunters worldwide</div>
+                    <div class="num"><i class="far fa-heart"></i>20<span>3</span>2</div>
+                    <div class="text1">Volunters worldwide</div>
                   </div>
                   <div class="num-text">
-                    <div>132</div>
-                    <div>Active projects</div>
+                    <div class="num"><i class="fas fa-globe"></i>1<span>3</span>2</div>
+                    <div class="text1">Active projects</div>
                   </div>
                   <div class="num-text">
-                    <div>3.8M</div>
-                    <div>Donated</div>
+                    <div class="num"><i class="fas fa-dollar-sign"></i><span>3</span>.8M</div>
+                    <div class="text1">Donated</div>
                   </div>
 
               </div>
@@ -62,7 +62,7 @@ export default {
     .section-1{
         display: flex;
         height: 350px;
-        
+
         .section-1-left{
             height: 100%;
             width: 70%;
@@ -96,11 +96,23 @@ export default {
             width: 30%;
             text-align: center;
             color: white;
-            background-color: rgb(243, 52, 52);
+            background-image: url('../assets/images/home-content-bg-1.jpg');
 
             .num-text{
-                margin: 20px;
+                margin: 25px;
                 font-size: 18px;
+                .num{
+                    font-size: 24px;
+                    span{
+                        font-size: 28px;
+                    }
+                    .far, .fas{
+                        margin-right: 6px;
+                    }
+                }
+                .text1{
+                    font-size: 14px;
+                }
             }
         }
         

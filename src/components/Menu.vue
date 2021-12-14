@@ -21,20 +21,26 @@ export default {
 
 <style lang="scss" scoped>
 
+@import '../assets/vars';
+
 ul{
     list-style: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
     li{
-        color: white;
-        font-size: 13px;
-        margin-right: 20px;
+        color: $color-gray;
+        font-size: 10px;
+        margin-right: 45px;
         cursor: pointer;
     }
+    li:first-child{
+        color: $color-orange;
+    }
     li.bottone{
+        color: white;
         background-color: orange;
-        padding: 4px;
+        padding: 6px 10px;
         cursor: pointer;
     }
 }
