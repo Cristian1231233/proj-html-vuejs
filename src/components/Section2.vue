@@ -1,8 +1,8 @@
 <template>
   <div class="section-2">
-          <div>OUR VALUE</div>
-          <div class="line"></div>
-          <div>Think Big.Act Bigger.</div>
+          <div class="title-2">OUR VALUE</div>
+          <div class="line-2"></div>
+          <div class="testo-2">Think Big.Act Bigger.</div>
           <div class="container-ciclo-2">
               <div class="element">
                   <div class="symbol"><i class="fas fa-tint"></i></div>
@@ -50,13 +50,22 @@ export default {
             background-size: 900px;
             background-position-y: 40px;
             padding: 60px;
+            .title-2{
+                color: white;
+                font-size: 23px;
+                margin: 20px;
+            }
+            .testo-2{
+                color: $color-gray;
+            }
 
-            // .line{
-            //     // height: 3px;
-            //     // width: 60px;
-            //     // background-color: yellow;
-                
-            // }
+            .line-2{
+                height: 2px;
+                width: 100px;
+                background-color: $color-orange;
+                margin: 20px auto;
+
+            }
             .container-ciclo-2{
                 display: flex;
                 margin-top: 120px;

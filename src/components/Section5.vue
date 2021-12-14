@@ -2,7 +2,7 @@
   <div class="section-5">
      <div class="contenitore-top">
          <div class="titolo">LATEST ARTICLES</div>
-         <div class="line-5">line</div>
+         <div class="line-5"></div>
          <div class="text-5">Togheter we make all the difference</div>
      </div>
      <div class="container-5">
@@ -11,7 +11,7 @@
                  <img src="../assets/images/photo-1444213007800-cff19e1677ac-200x150.jpg" alt="">
              </div>
              <div class="text">
-                <div class="yellow">Understanding community complexities</div>
+                <div class="orange">Understanding community complexities</div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
              </div>
          </div>
@@ -21,7 +21,7 @@
                  <img src="../assets/images/photo-1444664597500-035db93e2323-177x142.jpg" alt="">
              </div>
              <div class="texts">
-                 <div class="yellow">Understanding community complexities</div>
+                 <div class="orange">Understanding community complexities</div>
                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
              </div>
          </div>
@@ -30,7 +30,7 @@
                  <img src="../assets/images/photo-1444664597500-035db93e2323-177x142.jpg" alt="">
              </div>
              <div class="texts">
-                 <div class="yellow">Understanding community complexities</div>
+                 <div class="orange">Understanding community complexities</div>
                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
              </div>
          </div>
@@ -69,24 +69,32 @@ export default {
 <style lang="scss" scoped>
 
 @import '../assets/vars.scss';
+@import '../assets/mixin.scss';
 
 .section-5{
     min-height: 400px;
+    background-color: linear-gradient($color-gray, white);
     .contenitore-top{
         text-align: center;
         margin: 60px 0;
         
         .titolo{
-            font-size: 25px;
-            margin-bottom: 15px;
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+        .line-5{
+            height: 2px;
+            width: 100px;
+            background-color: $color-orange;
+            margin: 20px auto;
         }
         .text-5{
+            color: $color-gray;
             margin-top: 20px;
         }
     }
     .container-5{
-        display: flex;
-        justify-content: space-between;
+        @include flex(j);
         width: 700px;
         min-height: 300px;
         margin: 0 auto;
@@ -118,6 +126,7 @@ export default {
             display: flex;
             width: 100%;
             margin-bottom: 30px;
+            margin-left: auto;
             .images{
                 width: 76px;
                 img{

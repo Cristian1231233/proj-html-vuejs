@@ -42,6 +42,7 @@ export default {
 <style lang="scss" scoped>
 
 @import '../assets/vars.scss';
+@import '../assets/mixin.scss';
 
 header{
     height: 600px;
@@ -52,9 +53,7 @@ header{
 
     .header-top{
         height: 70px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex(ja);
         padding: 20px 40px;
 
         .logo{
@@ -69,9 +68,7 @@ header{
 }
 .container-header-bottom{
     height: calc(100% - 70px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(jca);
 
     .header-bottom{
         text-align: center;

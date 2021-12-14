@@ -56,6 +56,7 @@ export default {
 <style lang="scss" scoped>
 
 @import '../assets/vars.scss';
+@import '../assets/mixin.scss';
 
 .main{
     min-height: 400px;
@@ -88,10 +89,8 @@ export default {
             
         }
         .section-1-right{
-            display: flex;
+            @include flex(ja);
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             height: 100%;
             width: 30%;
             text-align: center;

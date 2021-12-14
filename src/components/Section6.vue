@@ -19,6 +19,7 @@ export default {
 <style lang="scss" scoped>
 
 @import '../assets/vars.scss';
+@import '../assets/mixin.scss';
 
 .section-6{
     height: 400px;
@@ -27,9 +28,7 @@ export default {
     background-size: 1400px;
     background-position-x: center;
     background-position-y: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(ja);
     .text{
         width: 500px;
         text-align: center;

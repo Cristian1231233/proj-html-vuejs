@@ -1,0 +1,21 @@
+@mixin flex($type: 'df'){
+    display: flex;
+    @if $type == 'j'{
+        justify-content: space-between;
+} @else if $type == 'a'{
+        align-items: center;
+} @else if $type == 'ja'{
+    justify-content: space-between;
+    align-items: center;
+} @else if $type == 'jsaa'{
+    justify-content: space-around;
+    align-items: center;
+} @else if $type == 'jca'{
+    justify-content: center;
+    align-items: center;
+} @else if $type == 'jsa'{
+    justify-content: space-around;
+   
+}
+
+}

@@ -22,12 +22,11 @@ export default {
 <style lang="scss" scoped>
 
 @import '../assets/vars';
+@import '../assets/mixin';
 
 ul{
     list-style: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex(jsaa);
     li{
         color: $color-gray;
         font-size: 10px;

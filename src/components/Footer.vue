@@ -13,16 +13,10 @@
                 >
                     <i :class="icon"></i>
                 </div>
-                <!-- <div class="icon">
-                    <i class="fab fa-instagram"></i>
-                </div>
-                <div class="icon">
-                    <i class="fab fa-twitter"></i>
-                </div>
-                <div class="icon">
-                    <i class="fab fa-youtube"></i>
-                </div> -->
             </div>
+      </div>
+      <div class="footer-end">
+          <div class="arrow-under"><i class="fas fa-chevron-up"></i></div>
       </div>
   </footer>
 </template>
@@ -38,9 +32,10 @@ export default {
 
 <style lang="scss" scoped>
 
+@import '../assets/mixin';
+
 .footer-top{
-    display: flex;
-    align-items: center;
+    @include flex(a);
     height: 90px;
     .logo{
         width: 240px;
@@ -53,11 +48,9 @@ export default {
     }
 }
 .footer-bottom{
-    display: flex;
+    @include flex(jca);
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 90px;
+    height: 70px;
     background-color: rgb(243, 234, 234);
     p{
         font-size: 8px;
@@ -66,8 +59,7 @@ export default {
     .icon-social{
         width: 130px;
         height: 25px;
-        display: flex;
-        justify-content: space-around;
+        @include flex(jsa);
         .icon{
             width: 25px;
             height: 100%;
@@ -78,6 +70,24 @@ export default {
             cursor: pointer;
             
         }
+    }
+    
+}
+.footer-end{
+    height: 30px;
+    background-color: rgb(243, 234, 234);
+    position: relative;
+    
+    .arrow-under{
+        width: 35px;
+        height: 28px;
+        color: white;
+        background-color: rgb(31, 30, 30);
+        position: absolute;
+        right: 30px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        @include flex(jca);
     }
 }
 
