@@ -1,9 +1,9 @@
 <template>
   <div class="section-5">
-     <div class="titolo">
-         <div>LATEST ARTICLES</div>
-         <div>line</div>
-         <div>Togheter we make all the difference</div>
+     <div class="contenitore-top">
+         <div class="titolo">LATEST ARTICLES</div>
+         <div class="line-5">line</div>
+         <div class="text-5">Togheter we make all the difference</div>
      </div>
      <div class="container-5">
          <div class="image-text">
@@ -68,11 +68,21 @@ export default {
 
 <style lang="scss" scoped>
 
+@import '../assets/vars.scss';
+
 .section-5{
     min-height: 500px;
-    .titolo{
+    .contenitore-top{
         text-align: center;
         margin: 60px 0;
+        
+        .titolo{
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+        .text-5{
+            margin-top: 20px;
+        }
     }
     .container-5{
         display: flex;
@@ -81,6 +91,9 @@ export default {
         min-height: 300px;
         margin: 0 auto;
         border: 1px solid black;
+        p{
+            color: $color-gray;
+        }
         .image-text{
             width: 45%;
             min-height: 300px;
@@ -94,7 +107,7 @@ export default {
             .text{
                 padding: 14px;
                 .yellow{
-                    color: #FEC866;
+                    color: $color-orange;
                     margin: 10px 0;
                 }
             }
@@ -120,7 +133,7 @@ export default {
                 font-size: 12px;
                 margin: 7px 10px;
                 .yellow{
-                    color: #FEC866;
+                    color: $color-orange;
                 }
             }
         }

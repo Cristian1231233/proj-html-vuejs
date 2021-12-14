@@ -41,10 +41,21 @@ export default {
     }
 }
 .footer-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 90px;
     background-color: rgb(243, 234, 234);
-    text-align: center;
-    
+    p{
+        font-size: 8px;
+        margin-bottom: 15px;
+    }
+    .icon-social{
+        width: 100px;
+        height: 25px;
+        border: 1px solid black;
+    }
 }
 
 </style>

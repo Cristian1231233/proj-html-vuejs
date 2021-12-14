@@ -54,6 +54,8 @@ export default {
 
 <style lang="scss" scoped>
 
+@import '../assets/vars.scss';
+
 .main{
     min-height: 400px;
     .section-1{
@@ -69,7 +71,12 @@ export default {
                 margin: 10px;
             }
             button{
+                color: white;
+                background-color: $color-orange;
                 margin: 10px 10px;
+                padding: 6px 10px;
+                border: $color-orange;
+                cursor: pointer;
             }
             
         }
