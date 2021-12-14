@@ -3,6 +3,7 @@
       <div class="section-1">
           <div class="section-1-left">
               <div>EVERY MOMENT COUNTS</div>
+              <div class="line-1"></div>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum recusandae tenetur at, perferendis id quos ipsa. Sequi alias perferendis, quos pariatur incidunt, neque similique velit sapiente quas corporis, delectus vitae.</p>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum recusandae tenetur at, perferendis id quos ipsa. Sequi alias perferendis, quos pariatur incidunt, neque similique velit sapiente quas corporis, delectus vitae.</p>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum recusandae tenetur at, perferendis id quos ipsa. Sequi alias perferendis, quos pariatur incidunt, neque similique velit sapiente quas corporis, delectus vitae.</p>
@@ -61,19 +62,25 @@ export default {
     .section-1{
         display: flex;
         height: 350px;
-        background-color: red;
+        
         .section-1-left{
             height: 100%;
             width: 70%;
             background-color: white;
             padding: 45px;
+            .line-1{
+                height: 3px;
+                width: 100px;
+                background-color: $color-orange;
+                margin: 20px 0;
+            }
             p{
-                margin: 10px;
+                color: $color-gray;
+                margin: 20px 0;
             }
             button{
                 color: white;
                 background-color: $color-orange;
-                margin: 10px 10px;
                 padding: 6px 10px;
                 border: $color-orange;
                 cursor: pointer;

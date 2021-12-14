@@ -1,8 +1,8 @@
 <template>
   <div class="section-3">
-     <div>RECENT CAUSES</div>
-     <div>line</div>
-     <div>We run projects in over 30 countries in 5 contintents</div>
+     <div class="titolo-3">RECENT CAUSES</div>
+     <div class="line-3">line</div>
+     <div class="p-3">We run projects in over 30 countries in 5 contintents</div>
      <div class="container-ciclo-3">
          
          <div class="photo">
@@ -30,11 +30,17 @@ export default {
 
 <style lang="scss" scoped>
 
+@import '../assets/vars.scss';
+
+
 .section-3{
+    .titolo-3, .line-3{
+        margin: 15px;
+    }
     text-align: center;
     padding: 30px;
     .container-ciclo-3{
-        margin: 20px auto;
+        margin: 60px auto;
         display: flex;
        
         .photo{

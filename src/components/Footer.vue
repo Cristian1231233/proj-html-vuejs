@@ -9,7 +9,16 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem doloremque</p>
             <div class="icon-social">
                 <div class="icon">
-
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="icon">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="icon">
+                    <i class="fab fa-youtube"></i>
                 </div>
             </div>
       </div>
@@ -52,9 +61,19 @@ export default {
         margin-bottom: 15px;
     }
     .icon-social{
-        width: 100px;
+        width: 130px;
         height: 25px;
-        border: 1px solid black;
+        display: flex;
+        justify-content: space-around;
+        .icon{
+            width: 25px;
+            height: 100%;
+            background-color:white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 25px;
+            cursor: pointer;
+        }
     }
 }
 
