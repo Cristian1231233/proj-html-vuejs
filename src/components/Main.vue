@@ -27,10 +27,10 @@
               </div>
           </div>
       </div>
-      <Section2 />
-      <Section3 />
+      <Section2 :elemetList="elemetList" />
+      <Section3 :photoList="photoList" />
       <div class="section-4">VIEW ALL OUR CAUSES</div>
-      <Section5 />
+      <Section5 :imagesTexts="imagesTexts" />
       <Section6 />
   </div>
 </template>
@@ -44,6 +44,68 @@ import Section6 from './Section6.vue'
 
 export default {
    nome: 'Main',
+  
+   data(){
+       return{
+           photoList: [
+               'avada-charity-fair-trade-featured.jpg',
+               'avada-charity-shelter-featured.jpg',
+               'avada-charity-farming-featured-200x150.jpg',
+               'avada-charity-vaccines-featured.jpg'
+           ],
+           elemetList: [
+               {
+                   symbol: 'fas fa-tint',
+                   title: 'Clean Water',
+                   paragrafo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis porro, vitae explicabo odio voluptatum iste?',
+                   bottone: 'Learn More'
+               },
+               {
+                   symbol: 'fas fa-stethoscope',
+                   title: 'Vaccinations',
+                   paragrafo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis porro, vitae explicabo odio voluptatum iste?',
+                   bottone: 'Learn More'
+               },
+               {
+                   symbol: 'fas fa-graduation-cap',
+                   title: 'Education',
+                   paragrafo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis porro, vitae explicabo odio voluptatum iste?',
+                   bottone: 'Learn More'
+               },
+               {
+                   symbol: 'fab fa-pagelines',
+                   title: 'Farming',
+                   paragrafo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis porro, vitae explicabo odio voluptatum iste?',
+                   bottone: 'Learn More'
+               },
+
+           ],
+           imagesTexts: [
+               {
+                   image: 'photo-1444664597500-035db93e2323-177x142.jpg',
+                   testo: 'The human story of uniqueness',
+                   paragrafo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+               },
+               {
+                   image: 'photo-1447430617419-95715602278e-177x142.jpg',
+                   testo: 'Sustainable trade tactics',
+                   paragrafo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+               },
+               {
+                   image: 'photo-1460230525622-630fe3294cd7-177x142.jpg',
+                   testo: 'Farmers making a difference',
+                   paragrafo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+               },
+               {
+                   image: 'photo-1460600421604-5e138c208b9c-177x142.jpg',
+                   testo: 'Meeting remote tribes in Peru',
+                   paragrafo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+               },
+
+           ]
+           
+       }
+   },
    components:{
        Section2,
        Section3,
@@ -89,7 +151,7 @@ export default {
             
         }
         .section-1-right{
-            @include flex(ja);
+            @include flex(jca);
             flex-direction: column;
             height: 100%;
             width: 30%;

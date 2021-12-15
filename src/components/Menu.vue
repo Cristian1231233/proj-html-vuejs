@@ -33,6 +33,7 @@ ul{
         margin-right: 45px;
         cursor: pointer;
     }
+    
     li:first-child{
         color: $color-orange;
     }

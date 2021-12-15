@@ -4,29 +4,13 @@
           <div class="line-2"></div>
           <div class="testo-2">Think Big.Act Bigger.</div>
           <div class="container-ciclo-2">
-              <div class="element">
-                  <div class="symbol"><i class="fas fa-tint"></i></div>
-                  <div class="title">Clean Water</div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis porro, vitae explicabo odio voluptatum iste? </p>
-                  <button>Learn More</button>
-              </div>
-              <div class="element">
-                  <div class="symbol"><i class="fas fa-stethoscope"></i></div>
-                  <div class="title">Clean Water</div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis porro, vitae explicabo odio voluptatum iste? </p>
-                  <button>Learn More</button>
-              </div>
-              <div class="element">
-                  <div class="symbol"><i class="fas fa-graduation-cap"></i></div>
-                  <div class="title">Clean Water</div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis porro, vitae explicabo odio voluptatum iste? </p>
-                  <button>Learn More</button>
-              </div>
-              <div class="element">
-                  <div class="symbol"><i class="fab fa-pagelines"></i></div>
-                  <div class="title">Clean Water</div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis porro, vitae explicabo odio voluptatum iste? </p>
-                  <button>Learn More</button>
+              <div class="element" v-for="(element, index) in elemetList"
+              :key="index"
+              >
+                  <div class="symbol"><i :class="element.symbol"></i></div>
+                  <div class="title">{{element.title}}</div>
+                  <p>{{element.paragrafo}}</p>
+                  <button>{{element.bottone}}</button>
               </div>
           </div>
       </div>
@@ -34,7 +18,10 @@
 
 <script>
 export default {
-    nome: 'Section2'
+    nome: 'Section2',
+    props:{
+        elemetList: Array
+    }
 }
 </script>
 

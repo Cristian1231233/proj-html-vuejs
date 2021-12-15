@@ -5,26 +5,21 @@
      <div class="p-3">We run projects in over 30 countries in 5 contintents</div>
      <div class="container-ciclo-3">
          
-         <div class="photo">
-             <img src="../assets/images/avada-charity-fair-trade-featured-200x150.jpg" alt="">
+         <div class="photo" v-for="(photo, index) in photoList"
+         :key="index"
+         >
+             <img :src="require(`../assets/images/${photo}`)" alt="">
          </div>
-         <div class="photo">
-             <img src="../assets/images/avada-charity-fair-trade-featured-200x150.jpg" alt="">
-         </div>
-         <div class="photo">
-             <img src="../assets/images/avada-charity-fair-trade-featured-200x150.jpg" alt="">
-         </div>
-         <div class="photo">
-             <img src="../assets/images/avada-charity-fair-trade-featured-200x150.jpg" alt="">
-         </div>
-        
      </div>
  </div>
 </template>
 
 <script>
 export default {
-    nome: 'Section3'
+    nome: 'Section3',
+    props:{
+        photoList: Array
+    }
 }
 </script>
 

@@ -2,7 +2,7 @@
   <div class="section-6">
     <div class="text">
       <div class="title">CHANGE A LIFE TODAY</div>
-      <div class="line">LINE</div>
+      <div class="line"></div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam est distinctio molestiae molestias atque. Amet velit esse ut sint, doloribus, eaque quo earum voluptate</p>
       <button>VOLUNTEER</button>
       <button>DONATE NOW</button>
@@ -30,14 +30,23 @@ export default {
     background-position-y: center;
     @include flex(ja);
     .text{
-        width: 500px;
+        width: 610px;
         text-align: center;
         margin: 10px auto;
         .title{
             font-size: 20px;
         }
+        .line{
+            height: 2px;
+            width: 100px;
+            background-color: $color-orange;
+            margin: 20px auto;
+        }
         .title, p, button{
             margin: 20px;
+        }
+        p{
+            color: rgb(233, 227, 227);
         }
         button{
             color: white;

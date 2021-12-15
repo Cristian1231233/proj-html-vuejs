@@ -16,42 +16,18 @@
              </div>
          </div>
         <div class="container-images">
-         <div class="images-texts">
+         <div class="images-texts" v-for="(item, index) in imagesTexts"
+         :key="index"
+         >
              <div class="images">
-                 <img src="../assets/images/photo-1444664597500-035db93e2323-177x142.jpg" alt="">
+                 <img :src="require(`../assets/images/${item.image}`)" alt="">
              </div>
              <div class="texts">
-                 <div class="orange">Understanding community complexities</div>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                 <div class="orange">{{item.testo}}</div>
+                 <p>{{item.paragrafo}}</p>
              </div>
          </div>
-         <div class="images-texts">
-             <div class="images">
-                 <img src="../assets/images/photo-1444664597500-035db93e2323-177x142.jpg" alt="">
-             </div>
-             <div class="texts">
-                 <div class="orange">Understanding community complexities</div>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-             </div>
-         </div>
-         <div class="images-texts">
-             <div class="images">
-                 <img src="../assets/images/photo-1444664597500-035db93e2323-177x142.jpg" alt="">
-             </div>
-             <div class="texts">
-                 <div class="orange">Understanding community complexities</div>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-             </div>
-         </div>
-         <div class="images-texts">
-             <div class="images">
-                 <img src="../assets/images/photo-1444664597500-035db93e2323-177x142.jpg" alt="">
-             </div>
-             <div class="texts">
-                 <div class="orange">Understanding community complexities</div>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-             </div>
-         </div>
+         
         </div>
      </div>
      <div class="altro-text">
@@ -62,7 +38,10 @@
 
 <script>
 export default {
-    nome: 'Section5'
+    nome: 'Section5',
+    props:{
+        imagesTexts: Array
+    }
 }
 </script>
 

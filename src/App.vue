@@ -21,7 +21,9 @@ export default {
           'fab fa-instagram',
           'fab fa-twitter',
           'fab fa-youtube'
-      ]
+      ],
+      
+      
     }
   },
   components: {
