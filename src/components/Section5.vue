@@ -53,7 +53,8 @@ export default {
 
 .section-5{
     min-height: 400px;
-    background-color: linear-gradient($color-gray, white);
+    background-color: rgb(241, 232, 232);
+    padding: 13px 0;
     .contenitore-top{
         text-align: center;
         margin: 60px 0;
@@ -75,11 +76,11 @@ export default {
     }
     .container-5{
         @include flex(j);
-        width: 700px;
+        width: 730px;
         min-height: 300px;
         margin: 0 auto;
         p{
-            color: $color-gray;
+            color: $color-gray-dark;
         }
         .image-text{
             width: 50%;
@@ -96,6 +97,9 @@ export default {
                     color: $color-orange;
                     margin: 10px 0;
                 }
+                p{
+                    font-size: 13px;
+                }
             }
         }
         .container-images{
@@ -105,10 +109,12 @@ export default {
         .images-texts{
             display: flex;
             width: 100%;
+            height: 70px;
             margin-bottom: 30px;
             margin-left: auto;
             .images{
-                width: 86px;
+                width: 90px;
+                
                 img{
                     width: 100%;
                     height: 100%;
@@ -130,7 +136,7 @@ export default {
         }
     }
     .altro-text{
-        width: 700px;
+        width: 730px;
         height: 40px;
         color: white;
         font-size: 13px;

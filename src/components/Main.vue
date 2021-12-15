@@ -32,25 +32,29 @@ export default {
                {
                    symbol: 'fas fa-tint',
                    title: 'Clean Water',
-                   paragrafo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis porro, vitae explicabo odio voluptatum iste?',
+                   paragrafo: 'Lorem ipsum dolor sit amet consectetur',
+                   paragrafo2: 'adipisicing elit. Corporis consectetur',
                    bottone: 'Learn More'
                },
                {
                    symbol: 'fas fa-stethoscope',
                    title: 'Vaccinations',
-                   paragrafo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis porro, vitae explicabo odio voluptatum iste?',
+                   paragrafo: 'Lorem ipsum dolor sit amet consectetur',
+                   paragrafo2: 'adipisicing elit. Corporis consectetur',
                    bottone: 'Learn More'
                },
                {
                    symbol: 'fas fa-graduation-cap',
                    title: 'Education',
-                   paragrafo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis porro, vitae explicabo odio voluptatum iste?',
+                   paragrafo: 'Lorem ipsum dolor sit amet consectetur',
+                   paragrafo2: 'adipisicing elit. Corporis consectetur',
                    bottone: 'Learn More'
                },
                {
                    symbol: 'fab fa-pagelines',
                    title: 'Farming',
-                   paragrafo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis porro, vitae explicabo odio voluptatum iste?',
+                   paragrafo: 'Lorem ipsum dolor sit amet consectetur',
+                   paragrafo2: 'adipisicing elit. Corporis consectetur',
                    bottone: 'Learn More'
                },
 
@@ -59,26 +63,26 @@ export default {
                {
                    image: 'photo-1444664597500-035db93e2323-177x142.jpg',
                    testo: 'The human story of uniqueness',
-                   paragrafo: 'Lorem ipsum dolor sit amet, consectetur',
-                   paragrafo2: 'Lorem ipsum dolor sit amet, consectetur'
+                   paragrafo: 'Lorem ipsum dolor sit amet,',
+                   paragrafo2: 'Lorem ipsum dolor sit amet'
                },
                {
                    image: 'photo-1447430617419-95715602278e-177x142.jpg',
                    testo: 'Sustainable trade tactics',
-                   paragrafo: 'Lorem ipsum dolor sit amet, consectetur',
-                   paragrafo2: 'Lorem ipsum dolor sit amet, consectetur'
+                   paragrafo: 'Lorem ipsum dolor sit amet',
+                   paragrafo2: 'Lorem ipsum dolor sit amet'
                },
                {
                    image: 'photo-1460230525622-630fe3294cd7-177x142.jpg',
                    testo: 'Farmers making a difference',
-                   paragrafo: 'Lorem ipsum dolor sit amet, consectetur',
-                   paragrafo2: 'Lorem ipsum dolor sit amet, consectetur'
+                   paragrafo: 'Lorem ipsum dolor sit amet',
+                   paragrafo2: 'Lorem ipsum dolor sit amet'
                },
                {
                    image: 'photo-1460600421604-5e138c208b9c-177x142.jpg',
                    testo: 'Meeting remote tribes in Peru',
-                   paragrafo: 'Lorem ipsum dolor sit amet, consectetur',
-                   paragrafo2: 'Lorem ipsum dolor sit amet, consectetur'
+                   paragrafo: 'Lorem ipsum dolor sit amet',
+                   paragrafo2: 'Lorem ipsum dolor sit amet'
                },
 
            ]

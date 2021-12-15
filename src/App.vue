@@ -36,13 +36,15 @@ export default {
 
 <style lang="scss">
 
-
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Montserrat:wght@300&display=swap');
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+  font-family: 'Montserrat', sans-serif;
+}
 </style>
 

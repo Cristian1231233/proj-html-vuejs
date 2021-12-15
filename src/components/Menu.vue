@@ -28,7 +28,7 @@ ul{
     list-style: none;
     @include flex(jsaa);
     li{
-        color: $color-gray;
+        color: rgb(231, 227, 227);
         font-size: 10px;
         margin-right: 45px;
         cursor: pointer;

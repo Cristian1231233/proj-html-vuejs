@@ -3,7 +3,7 @@
     <div class="text">
       <div class="title">CHANGE A LIFE TODAY</div>
       <div class="line"></div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam est distinctio molestiae molestias atque. Amet velit esse ut sint, doloribus, eaque quo earum voluptate</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam est distinctio molestiae molestias atque. Amet velit esse ut </p>
       <button>VOLUNTEER</button>
       <button>DONATE NOW</button>
     </div>

@@ -43,7 +43,7 @@ export default {
         margin: 20px auto;
     }
     .p-3{
-        color: $color-gray;
+        color: $color-gray-dark;
     }
     text-align: center;
     padding: 30px;

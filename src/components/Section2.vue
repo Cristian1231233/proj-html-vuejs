@@ -10,6 +10,7 @@
                   <div class="symbol"><i :class="element.symbol"></i></div>
                   <div class="title">{{element.title}}</div>
                   <p>{{element.paragrafo}}</p>
+                  <p>{{element.paragrafo2}}</p>
                   <button>{{element.bottone}}</button>
               </div>
           </div>
@@ -34,8 +35,8 @@ export default {
             text-align: center;
             background-image: url('../assets/images/home-content-bg-2.jpg');
             background-position: center;
-            background-size: 900px;
-            background-position-y: 40px;
+            background-size: 1400px;
+            background-position-y: px;
             padding: 60px;
             .title-2{
                 color: white;
@@ -43,7 +44,7 @@ export default {
                 margin: 20px;
             }
             .testo-2{
-                color: $color-gray;
+                color: white;
             }
 
             .line-2{
@@ -71,7 +72,9 @@ export default {
                         font-size: 18px;
                     }
                     p{
-                        color: $color-gray;
+                        font-size: 13px;
+                        color: rgb(206, 198, 198);
+
                     }
                     button{
                         color: white;
