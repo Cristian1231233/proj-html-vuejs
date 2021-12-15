@@ -82,6 +82,7 @@ export default {
                         border-color: $color-orange;
                         padding: 4px 10px;
                         cursor: pointer;
+                        margin-top: 12px;
                     }
                 }
             }
