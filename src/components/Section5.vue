@@ -25,6 +25,7 @@
              <div class="texts">
                  <div class="orange">{{item.testo}}</div>
                  <p>{{item.paragrafo}}</p>
+                 <p>{{item.paragrafo2}}</p>
              </div>
          </div>
          
@@ -81,7 +82,7 @@ export default {
             color: $color-gray;
         }
         .image-text{
-            width: 45%;
+            width: 50%;
             min-height: 300px;
             .image{
                 width: 100%;
@@ -107,7 +108,7 @@ export default {
             margin-bottom: 30px;
             margin-left: auto;
             .images{
-                width: 76px;
+                width: 86px;
                 img{
                     width: 100%;
                     height: 100%;
@@ -115,7 +116,10 @@ export default {
             }
             .texts{
                 font-size: 12px;
-                margin: 7px 10px;
+                margin: 3px 10px;
+                p{
+                    margin-top: 4px;
+                }
                 .orange{
                     color: $color-orange;
                 }
